@@ -98,7 +98,7 @@ const Welcome = ({ user }) => (
   <Message color="info">
     <Message.Header>
       Welcome, {user.displayName}
-      <Button primary OnClick={ () => firebase.auth().signout() }>
+      <Button primary onClick={ () => firebase.auth().signOut() }>
         Log Out
       </Button>
     </Message.Header>
